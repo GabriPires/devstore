@@ -31,9 +31,9 @@ devDependencies:
   autoprefixer:
     specifier: ^10.0.1
     version: 10.4.16(postcss@8.4.31)
-  cz-conventional-changelog:
-    specifier: ^3.3.0
-    version: 3.3.0(typescript@5.3.2)
+  cz-emoji-conventional:
+    specifier: ^1.0.2
+    version: 1.0.2(typescript@5.3.2)
   eslint:
     specifier: ^8
     version: 8.54.0
@@ -1161,6 +1161,16 @@ packages:
       word-wrap: 1.2.5
     optionalDependencies:
       '@commitlint/load': 18.4.3(typescript@5.3.2)
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
+  /cz-emoji-conventional@1.0.2(typescript@5.3.2):
+    resolution: {integrity: sha512-wWVpU8yIzE8WuzOl8JFHx5IdIn/zVWSHMU991ujDtcPVnX6+d6orQGwwRF4XhgMdWpPpZ0He4TWBG+7JD5fMyQ==}
+    dependencies:
+      chalk: 4.1.2
+      commitizen: 4.3.0(typescript@5.3.2)
+      word-wrap: 1.2.5
     transitivePeerDependencies:
       - typescript
     dev: true
