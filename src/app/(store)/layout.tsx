@@ -3,7 +3,10 @@ import { Metadata } from 'next'
 import { PropsWithChildren } from 'react'
 
 export const metadata: Metadata = {
-  title: 'home',
+  title: {
+    template: '%s | devstore',
+    default: 'home',
+  },
 }
 
 export default function StoreLayout({ children }: PropsWithChildren) {
