@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import data from '../data.json'
 
-export default async function GET(
+export async function GET(
   _: Request,
   { params }: { params: { slug: string } },
 ) {
@@ -12,7 +12,7 @@ export default async function GET(
   const product = data.products.find((product) => product.slug === slug)
 
   if (!product) {
-    return Response.json({ message: 'Product not found' }, { status: 400 })
+    return Response.json({ message: 'Product not found.' }, { status: 400 })
   }
 
   return Response.json(product)
