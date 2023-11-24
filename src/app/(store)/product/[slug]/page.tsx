@@ -28,7 +28,7 @@ export default async function Product({ params }: ProductProps) {
       <div className="col-span-2 overflow-hidden">
         <Image
           src={product.image}
-          alt={''}
+          alt={product.title}
           width={1000}
           height={1000}
           quality={100}
