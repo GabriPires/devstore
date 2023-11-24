@@ -1,5 +1,10 @@
 import { Header } from '@/components/header'
+import { Metadata } from 'next'
 import { PropsWithChildren } from 'react'
+
+export const metadata: Metadata = {
+  title: 'home',
+}
 
 export default function StoreLayout({ children }: PropsWithChildren) {
   return (
