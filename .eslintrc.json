@@ -1,3 +1,6 @@
 {
-  "extends": ["@gabpires/eslint-config/next"]
+  "extends": ["@gabpires/eslint-config/next"],
+  "rules": {
+    "@typescript-eslint/no-namespace": "off"
+  }
 }
